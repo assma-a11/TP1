@@ -1,0 +1,99 @@
+<!DOCTYPE html>    
+<html>    
+<head>    
+    <title>Login</title>    
+    <style>
+   
+
+
+.container{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50% -50%);
+}
+.form{
+    
+ 
+    height: 450px;
+    width: 400px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    background: transparent;
+    box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 1);
+    color: #fff;
+    padding-top: 1px solid;
+  margin: auto;
+padding: 3rem;
+
+
+}
+
+input{
+    width: 200px;
+    margin-top: 0px;
+    background: transparent;
+    outline:none;
+    padding: 10px;
+    font-size: 13px;
+    border-radius: 50px;
+    box-shadow: 0 0 4px black;
+    border: black;
+    transition:box-shadow 0.5s ease;
+}
+button{
+    padding: 5px 20px;
+    margin-top: 10px;
+    background: pink;
+    border-radius: 30px;
+
+    cursor: pointer;
+    
+}
+h2{
+color:pink;
+
+}
+input[placeholder]:focus{
+    color: black;
+
+}
+input:focus, button:hover{
+
+background:pink;
+
+
+}
+button:hover{
+    color: pink;
+}</style>    
+</head>    
+<body> 
+<div id="container">   
+    <h2>Authentication</h2><br>    
+     
+    <form id="login" method="post" action="AuthenticationServlet">    
+        <label><b>Login
+        </b>    
+        </label>    
+        <br> <br>
+        <input type="text" name="log" id="Uname" placeholder="Username">    
+        <br><br>    
+        <label><b>Password     
+        </b>    
+        </label>    
+        <br>
+        <br>
+        <input type="Password" name="password" id="Pass" placeholder="Password">    
+        <br><br>    
+        <br>
+        <input type="submit" name="log" id="log" value="Sign In">       
+        <br><br>    
+          
+          
+    </form>     
+</div>    
+</body>    
+</html>
